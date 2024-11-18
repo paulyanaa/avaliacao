@@ -3,8 +3,8 @@ require_once '../Controller/UsuarioController.php';
 
 $oUsuarioController = new UsuarioController();
 
-$aUsuariosAdmins = $oUsuarioController->FindByTipo('administrador');
-$aUsuariosComuns = $oUsuarioController->FindByTipo('comum');
+$aUsuariosAdmins = $oUsuarioController->listarUsuariosAdmin();
+$aUsuariosComuns = $oUsuarioController->listarUsuariosComum();
 
 ?>
 <!doctype html>
